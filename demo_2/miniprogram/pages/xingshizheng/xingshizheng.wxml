@@ -1,0 +1,12 @@
+<!--miniprogram/pages/xingshizheng/xingshizheng.wxml-->
+<view>
+  <image src="{{imagePath}}" mode="aspectFit"></image>
+</view>
+
+<view class="txt">
+  <text>车俩所有人：{{xingming}}</text>
+  <text>车牌号码：{{idcard}}</text>
+  <text>车辆类型：{{leixing}}</text>
+  <text>识别提示：{{tishi}}</text>
+  <button bindtap="ChooseImg">选择照片或拍照</button>
+</view>

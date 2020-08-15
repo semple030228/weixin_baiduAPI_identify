@@ -1,0 +1,6 @@
+/* miniprogram/pages/shenfenzheng/shenfenzheng.wxss */
+.txt{
+  display: flex;
+  flex-direction: column;
+}
+

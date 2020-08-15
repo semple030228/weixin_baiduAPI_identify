@@ -1,0 +1,58 @@
+<!--miniprogram/pages/index/index.wxml-->
+
+<!-- 图片上的动画展示 -->
+<view class="animation" wx:if="{{animation}}">
+  <view class="animationShow"></view>
+</view>
+
+<!-- 图片展示 -->
+<view class="img">
+  <image src="{{imagePath}}" mode="aspectFit"></image>
+</view>
+
+<view hidden="{{hidden}}">
+  <!-- 识别结果展示 -->
+  <view class="result">
+    <text>识别结果</text>
+    <text class="share" bindtap="toshare">分享</text>
+  </view>
+
+  <!-- 属性展示 -->
+  <view class="show">
+    <view class="title">
+      <view>名称</view>
+      <view>可信度</view>
+      <view>百度百科</view>
+    </view>
+    <block wx:for="{{answer}}" wx:key="index">
+      <view class="title data">
+        <view>{{item.name}}</view>
+        <view>{{item.score}}</view>
+        <view bindtap="baikeShow" data-itemdes="{{item.baike.description}}">查看百科</view>
+      </view>
+    </block>
+  </view>
+</view>
+
+<!-- 没有识别到植物的情况 -->
+<view class="noplant" wx:if="{{noplant}}">
+  <text>{{noflowers}}</text>
+</view>
+
+<!-- 图片选择按钮 -->
+<view class="btnImg" hidden="{{btnShow}}">
+  <button size="default" type="primary" bindtap="selectImage">选择图片</button>
+</view>
+
+<!-- 百度百科展示 -->
+<view class="introduce" wx:if="{{isShow}}">
+  <!-- 百度百科内容 -->
+  <view class="introduceShow">
+    {{baikedata}}
+  </view>
+  <!-- 取消按钮 -->
+  <view class="cancel" bindtap="cancelShow">
+    <image src="../../assets/images/cancel.png" mode="widthFix"></image>
+  </view>
+</view>
+

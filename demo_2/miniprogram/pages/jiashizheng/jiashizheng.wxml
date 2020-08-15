@@ -1,0 +1,13 @@
+<!--miniprogram/pages/jiashizheng/jiashizheng.wxml-->
+<view>
+  <image src="{{imagePath}}" mode="aspectFit"></image>
+</view>
+
+<view class="txt">
+  <text>姓名：{{xingming}}</text>
+  <text>证号：{{idcard}}</text>
+  <text>准驾车型：{{zhunjiachexing}}</text>
+  <text>有效期至：{{youxiaoqizhi}}</text>
+  <text>识别提示：{{tishi}}</text>
+  <button bindtap="ChooseImg">选择照片或拍照</button>
+</view>

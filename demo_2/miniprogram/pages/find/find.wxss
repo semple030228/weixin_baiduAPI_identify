@@ -1,0 +1,16 @@
+/* miniprogram/pages/find/find.wxss */
+image{
+  width: 200rpx;
+  height: 200rpx;
+}
+.menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.nei{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

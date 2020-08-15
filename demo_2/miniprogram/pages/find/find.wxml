@@ -1,0 +1,29 @@
+<!--miniprogram/pages/find/find.wxml-->
+<view class="menu">
+
+  <view class="nei" bindtap="GoToshenfenzheng">
+    <image src="/assets/images/code.jpg"></image>
+    <text>身份证</text>
+  </view>
+
+  <view class="nei" bindtap="GoTojiashizheng">
+    <image src="/assets/images/code.jpg"></image>
+    <text>驾驶证</text>
+  </view>
+
+</view>
+
+
+<view class="menu">
+
+  <view class="nei" bindtap="GoToxingshizheng">
+    <image src="/assets/images/code.jpg"></image>
+    <text>行驶证</text>
+  </view>
+
+  <view class="nei" bindtap="GoTochepaihao">
+    <image src="/assets/images/code.jpg"></image>
+    <text>车牌号</text>
+  </view>
+
+</view>

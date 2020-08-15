@@ -1,0 +1,5 @@
+/* miniprogram/pages/chepaihao/chepaihao.wxss */
+.txt{
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/find/find",
+    "pages/index/index",
+    "pages/user/user",
+    "pages/shenfenzheng/shenfenzheng",
+    "pages/jiashizheng/jiashizheng",
+    "pages/xingshizheng/xingshizheng",
+    "pages/chepaihao/chepaihao"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#9c88ff",
+    "navigationBarTitleText": "小老弟来了",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#a55eea",
+    "list": [
+      {
+        "pagePath": "pages/find/find",
+        "text": "发现",
+        "iconPath": "assets/images/camera.png",
+        "selectedIconPath": "assets/images/camera_active.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "用户",
+        "iconPath": "assets/images/user.png",
+        "selectedIconPath": "assets/images/user_active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

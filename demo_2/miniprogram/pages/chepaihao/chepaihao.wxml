@@ -1,0 +1,10 @@
+<!--miniprogram/pages/chepaihao/chepaihao.wxml-->
+<view>
+  <image src="{{imagePath}}" mode="aspectFit"></image>
+</view>
+
+<view class="txt">
+  <text>车牌号：{{chepaihao}}</text>
+  <text>识别提示：{{tishi}}</text>
+  <button bindtap="ChooseImg">选择照片或拍照</button>
+</view>
